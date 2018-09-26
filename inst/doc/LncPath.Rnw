@@ -5,7 +5,7 @@
 %\VignetteIndexEntry{LncPath Overview}
 %\VignetteKeywords{pathway}
 %\VignettePackage{LncPath}
-%\VignetteDepends{igraph,samr}
+%\VignetteDepends{igraph}
 
 \documentclass[10pt]{article}
 
@@ -50,7 +50,7 @@ library(LncPath)
 
 
 \section{Finding the differentially expressed genes from a expression profile}\label{GetDatasection} 
-This section introduces how to find signigicantly differentially expressed genes from an expression profile. We provided three ways to find differentially expressed genes from an expression profile, student's t-test, fold change and SAM. For each strategy, a threshold is defined for selecting significant differentially expressed genes. Specificially, the SAM method is depend on the samr package. 
+This section introduces how to find signigicantly differentially expressed genes from an expression profile. We provided two ways to find differentially expressed genes from an expression profile, student's t-test and fold change. For each strategy, a threshold is defined for selecting significant differentially expressed genes.
 
 
 <<>>= 
@@ -189,5 +189,5 @@ sessionInfo()
 %\VignetteIndexEntry{LncPath Overview}
 %\VignetteKeywords{pathway}
 %\VignettePackage{LncPath}
-%\VignetteDepends{igraph,samr}
+%\VignetteDepends{igraph}
 

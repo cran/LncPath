@@ -11,7 +11,7 @@ For a given expression profile of two conditions, find the genes differencially 
 }
 \usage{
 findSigGenes(Expr, Label, Method = "tTest", Directed = TRUE, 
-	FdrCut = 0.01, FDCut = 1, SAMfdr = 0.2)
+	FdrCut = 0.01, FDCut = 1)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -25,7 +25,7 @@ findSigGenes(Expr, Label, Method = "tTest", Directed = TRUE,
 }
   \item{Method}{
 %%     ~~Describe \code{Method} here~~
-	A string, specifying the method to calculate the differentially expressed genes, should be one of the "tTest", "foldChange" or "SAM".
+	A string, specifying the method to calculate the differentially expressed genes, should be one of the "tTest"or"foldChange".
 }
   \item{Directed}{
 %%     ~~Describe \code{Directed} here~~
@@ -39,14 +39,12 @@ findSigGenes(Expr, Label, Method = "tTest", Directed = TRUE,
 %%     ~~Describe \code{FDCut} here~~
 	Numeric, the cutoff for fold change, can be ignored if not using fold change.
 }
-  \item{SAMfdr}{
-%%     ~~Describe \code{SAMfdr} here~~	
-	Numeric, the cutoff of fdrs for SAM, can be ignored if not using SAM.
-}
+ 
+
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
-For a given expression profile of two conditions, lncPath package provide three method to find differentially expressed genes: t-text, fold change and SAM. The row of the expression profile should be gene IDs and the column of the expression profile should be names of samples. Samples should be under two conditions and the label should be given as 0 and 1. For t-test, fold change and SAM, different threshold can be set for significant differentially expressed genes.  
+For a given expression profile of two conditions, lncPath package provide two method to find differentially expressed genes: t-text and fold change. The row of the expression profile should be gene IDs and the column of the expression profile should be names of samples. Samples should be under two conditions and the label should be given as 0 and 1. For t-test, fold change and SAM, different threshold can be set for significant differentially expressed genes.  
 }
 \value{
 %%  ~Describe the value returned
